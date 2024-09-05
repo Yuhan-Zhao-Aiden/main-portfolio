@@ -2,6 +2,7 @@ import { Spotlight } from "./ui/Spotlight";
 import MagicButton from "./ui/MagicButton"
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FaLocationArrow } from "react-icons/fa";
+import Grid from "./Grid";
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
 
           <TextGenerateEffect 
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
+            words="Transforming Concepts into Seamless User Experiences"
           />
 
           <p className="text-center my-3">
@@ -48,6 +49,7 @@ const Hero = () => {
         </div>
 
       </div>
+      <Grid />
     </div>
   );
 };
