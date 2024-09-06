@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
+import { GlowingStarsBackgroundCard } from "./GlowingStars";
+// import { Vortex } from "./Vortex";
 
 export const BentoGrid = ({
   className,
@@ -44,7 +46,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-3xl relative group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-3xl overflow-hidden relative group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -97,7 +99,11 @@ export const BentoGridItem = ({
           </div>
         </div>
 
-        {id === 2 && <h1>Hello</h1>}
+        {id === 2 && (
+          <GlowingStarsBackgroundCard>
+
+          </GlowingStarsBackgroundCard>
+        )}
       </div>
     </div>
   );
